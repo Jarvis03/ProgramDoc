@@ -66,8 +66,6 @@ $ make  /  make all -j4  V=1
 $ make install
 ```
 
-
-
 5. 清除
 
 ```makefile
@@ -141,7 +139,7 @@ export PATH LD_LIBRARY_PATH
 
 6. 添加动态库
 
-`which arm-linux-gcc	// 查看命令在哪个目录下面 `
+  `which arm-linux-gcc	// 查看命令在哪个目录下面 `
 0. 查看 命令 依赖的 库文件 
 `arm-linux-readelf -d /bin/ls`
 
@@ -156,6 +154,10 @@ export PATH LD_LIBRARY_PATH
 `$ arm-linux-strip *`
 
 ### 通过网络挂载根文件系统
+
+> NFS设置格式：
+> nfsroot = [<server-ip>:]<root-dir>[,<nfs-options>]   
+> ip = <client-ip>:<server-ip>:<gw-ip>:<netmask>:<hostname>:<device>:<autoconf>
 
 ```shell
 修改 uboot 环境变量 	
