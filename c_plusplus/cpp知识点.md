@@ -19,7 +19,7 @@ student stu；
 
 ### 命名空间
 
-1. 头文件尽量不要用using namespace xx， 名称污染
+1. 头文件尽量不要用`using namespace xx`， 名称污染
 2. 无名命名空间
 
 ### 引用
